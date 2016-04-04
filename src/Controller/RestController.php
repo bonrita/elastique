@@ -60,6 +60,8 @@ class RestController implements ContainerInjectionInterface {
   ];
 
   /**
+   * The constructor of the RestController class.
+   *
    * @param \Drupal\Core\Entity\EntityManagerInterface $entity_manager
    *   The entity manager.
    *
@@ -116,6 +118,8 @@ class RestController implements ContainerInjectionInterface {
   }
 
   /**
+   * Generate a response.
+   *
    * @param array $data
    *   A list of data to serve.
    *
