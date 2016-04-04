@@ -1,0 +1,4 @@
+services:
+  elastique.publisher:
+    class: Drupal\elastique\Publisher
+    arguments: ['@entity.manager']

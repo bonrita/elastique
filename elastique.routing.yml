@@ -1,0 +1,92 @@
+elastique.publishers_list:
+  path: '/publishers/list'
+  defaults:
+    _controller: '\Drupal\elastique\Controller\RestController::publishersList'
+    _title: 'Publishers'
+    _format: 'json'
+  requirements:
+    _permission: 'access content'
+  methods: [GET]
+
+elastique.publishers_id:
+  path: '/publishers/{id}'
+  defaults:
+    _controller: '\Drupal\elastique\Controller\RestController::publishersId'
+    _title: 'Publisher'
+    _format: 'json'
+  requirements:
+    _permission: 'access content'
+    id: \d+
+  methods: [GET]
+
+elastique.authors_list:
+  path: '/authors/list'
+  defaults:
+    _controller: '\Drupal\elastique\Controller\RestController::authorList'
+    _title: 'Authors'
+    _format: 'json'
+  requirements:
+    _permission: 'access content'
+  methods: [GET]
+
+elastique.authors_id:
+  path: '/authors/{id}'
+  defaults:
+    _controller: '\Drupal\elastique\Controller\RestController::authorId'
+    _title: 'Author'
+    _format: 'json'
+  requirements:
+    _permission: 'access content'
+    id: \d+
+  methods: [GET]
+
+elastique.books_highlighted:
+  path: '/books/highlighted'
+  defaults:
+    _controller: '\Drupal\elastique\Controller\RestController::booksHighlighted'
+    _title: 'Highlighted'
+    _format: 'json'
+  requirements:
+    _permission: 'access content'
+  methods: [GET]
+
+elastique.books_id:
+  path: '/books/{id}'
+  defaults:
+    _controller: '\Drupal\elastique\Controller\RestController::bookId'
+    _title: 'Book'
+    _format: 'json'
+  requirements:
+    _permission: 'access content'
+    id: \d+
+  methods: [GET]
+
+elastique.search:
+  path: "/books/search/{keyword}"
+  defaults:
+    _controller: '\Drupal\elastique\Controller\RestController::search'
+    _title: 'Search'
+    _format: 'json'
+  requirements:
+    _permission: 'access content'
+  methods: [GET]
+
+elastique.search_offset:
+  path: '/books/search/{keyword}/{offset}'
+  defaults:
+    _controller: '\Drupal\elastique\Controller\RestController::search'
+    _title: 'Search'
+    _format: 'json'
+  requirements:
+    _permission: 'access content'
+  methods: [GET]
+
+elastique.search_limit:
+  path: '/books/search/{keyword}/{offset}/{limit}'
+  defaults:
+    _controller: '\Drupal\elastique\Controller\RestController::search'
+    _title: 'Search'
+    _format: 'json'
+  requirements:
+    _permission: 'access content'
+  methods: [GET]

@@ -1,0 +1,5 @@
+name: Elastique
+type: module
+description: A simple restful demo api
+core: 8.x
+package: Job assignments
