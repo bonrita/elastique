@@ -16,7 +16,8 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
 /**
- * Defines a generic controller to render a single entity.
+ * Defines a generic controller to serve information about books to other
+ * applications.
  */
 class RestController implements ContainerInjectionInterface {
 
